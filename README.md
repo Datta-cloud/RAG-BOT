@@ -1,4 +1,4 @@
-# RAGBook 📚
+# RAGBOT 📚
 
 A simple **Retrieval-Augmented Generation (RAG)** application that allows users to upload books/PDFs and ask questions about them.
 
