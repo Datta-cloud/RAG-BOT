@@ -9,6 +9,7 @@ langchain-community
 langchain-openai
 langchain-mistralai
 langchain-text-splitters
+langchain-google-genai
 
 # Document Loading
 pypdf
