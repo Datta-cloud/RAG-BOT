@@ -1,0 +1,35 @@
+# LLM / AI Providers
+openai
+mistralai
+
+# LangChain
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-mistralai
+langchain-text-splitters
+
+# Document Loading
+pypdf
+
+# Embeddings
+sentence-transformers
+langchain-huggingface
+
+# Vector Database
+chromadb
+langchain-chroma
+
+# Environment Variables
+python-dotenv
+
+# Frontend
+streamlit
+
+# Backend API
+fastapi
+uvicorn
+
+# Tokenization
+tiktoken
