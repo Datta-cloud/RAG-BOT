@@ -30,7 +30,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
 EMBEDDING_MODEL_NAME = "mistral-embed"
-LLM_MODEL_NAME = "gemini-2.5-flash"
+LLM_MODEL_NAME = "gemini-3.8-flash"
 
 PROMPT = ChatPromptTemplate.from_messages(
     [
