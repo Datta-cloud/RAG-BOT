@@ -12,11 +12,14 @@
 
 # phase 2=query(embeddings)->retrivers->(searching)vector store->(similar chunks+query)-> prompt->llm
 
+import os
 from dotenv import load_dotenv
+
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
+from langchain_mistralai import ChatMistralAI
 
 load_dotenv()
 
@@ -40,8 +43,11 @@ retriever = vector_store.as_retriever(
 )
 
 # Gemini LLM
-llm = ChatGoogleGenerativeAI(
-    model="gemini-3.8-flash",
+# Grok LLM
+llm = ChatOpenAI(
+    model="grok-4.1-fast",
+    api_key=os.getenv("GROQ_API_KEY"),
+    base_url="https://api.x.ai/v1",
     temperature=0
 )
 
